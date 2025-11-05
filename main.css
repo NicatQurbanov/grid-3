@@ -1,0 +1,63 @@
+/* MAIN SELECTORS */
+:root {
+ --gray: #393e42;
+ --dark-gray: #323637;
+ --yellow: #b8a23f;
+}
+
+* {
+ margin: 0;
+ font-family: Questrial, sans-serif;
+ box-sizing: border-box;
+ color: white;
+}
+
+body {
+ background-color: var(--gray);
+}
+
+ul {
+ list-style-type: none;
+ padding-inline-start: 0px;
+}
+
+/* HEADER SELECTORS */
+
+header {
+ display: flex;
+ justify-content: space-between;
+ width: 80%;
+ margin: 0 auto;
+}
+
+h1 {
+ text-transform: uppercase;
+ font-size: 3em;
+ font-weight: normal;
+}
+
+.nav-container {
+ display: flex;
+ justify-content: center;
+ gap: 5px;
+
+}
+
+.nav-container-items {
+  background-color: var(--dark-gray);
+  text-align: center;
+  padding: 15px 30px;
+}
+
+.nav-container-items > p {
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* GRID CONTAINER SELECTORS */
+
+/* FOOTER SELECTORS */
+
+footer {
+  background-color: var(--dark-gray)
+}
