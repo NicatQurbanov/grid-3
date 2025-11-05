@@ -21,6 +21,11 @@ ul {
  padding-inline-start: 0px;
 }
 
+img {
+ object-fit: contain;
+ 
+}
+
 /* HEADER SELECTORS */
 
 header {
@@ -28,11 +33,12 @@ header {
  justify-content: space-between;
  width: 80%;
  margin: 0 auto;
+ align-items: center;
 }
 
 h1 {
  text-transform: uppercase;
- font-size: 3em;
+ font-size: 3.3em;
  font-weight: normal;
 }
 
@@ -49,15 +55,59 @@ h1 {
   padding: 15px 30px;
 }
 
+.nav-container-items a {
+ text-decoration: none;
+ color: inherit;
+}
+
+.nav-container-items a:hover  {
+ color: var(--yellow);
+
+}
+
 .nav-container-items > p {
   text-transform: uppercase;
   margin-top: 5px;
 }
 
+
 /* GRID CONTAINER SELECTORS */
+
+.grid-container {
+ display: grid;
+ padding: 50px;
+ grid-template-columns: repeat(10, 70px);
+ grid-template-rows: repeat(8, 70px);
+ justify-content: center;
+ gap: 5px;
+ 
+ 
+}
+
+.grid-container-item {
+ background-color: white;
+ border: 1px solid black;
+ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.first, .second, .third, .fourth, .fifth, .seventh, .eighth, .ninth, .tenth, .eleventh, .twelvth, .thirteenth, .fourteenth, .sixteenth, .seventeenth, .eighteenth {
+ grid-area: span 2/ span 2;
+}
+
+.sixth, .fifteenth {
+ grid-column: 2 / span 2;
+ grid-row: span 2;
+}
+
+.positioned {
+ position: relative;
+ top: -35px;
+}
+
 
 /* FOOTER SELECTORS */
 
 footer {
-  background-color: var(--dark-gray)
+  background-color: var(--dark-gray);
+  height: 100px;
 }
